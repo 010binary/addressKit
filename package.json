@@ -2,14 +2,23 @@
   "name": "addresskit",
   "version": "1.0.0",
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  "keywords": [
+    "countries",
+    "states",
+    "cities",
+    "country-codes",
+    "currencies",
+    "languages",
+    "geolocation",
+    "address",
+    "information",
+    "data"
+  ],
   "repository": {
     "type": "git",
-    "url": ""},
+    "url": "https://github.com/010binary/addressKit.git"
+  },
   "author": "Augustine Chukwuemeka <Augustine32fg@gmail.com>",
   "license": "MIT",
-  "description": ""
+  "description": "A JavaScript library for retrieving detailed country information, including states, cities, country codes, currencies, and major languages."
 }
