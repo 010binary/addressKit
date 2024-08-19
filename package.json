@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/010binary/addressKit.git"
+    "url": "git+https://github.com/010binary/addressKit.git"
   },
   "author": "Augustine Chukwuemeka <Augustine32fg@gmail.com>",
   "license": "MIT",
@@ -31,8 +31,12 @@
     "typescript-eslint": "^8.1.0"
   },
   "scripts": {
-    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "build:es6": "tsc -p tsconfig.json",
+    "build:es5": "tsc -p tsconfig.es5.json",
+    "build": "npm run build:es6 && npm run build:es5",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "compile": "rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json"
   }
 }
