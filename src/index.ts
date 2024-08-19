@@ -1,3 +1,3 @@
-const names= "John";
+import { fetchCountryNames, getCountryData } from "./countries/getCountry";
 
-console.log(`Hello, ${names}!`);
+export { fetchCountryNames, getCountryData };
