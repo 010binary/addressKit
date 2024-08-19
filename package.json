@@ -1,0 +1,15 @@
+{
+  "name": "addresskit",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": ""},
+  "author": "Augustine Chukwuemeka <Augustine32fg@gmail.com>",
+  "license": "MIT",
+  "description": ""
+}
