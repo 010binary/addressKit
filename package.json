@@ -20,5 +20,19 @@
   },
   "author": "Augustine Chukwuemeka <Augustine32fg@gmail.com>",
   "license": "MIT",
-  "description": "A JavaScript library for retrieving detailed country information, including states, cities, country codes, currencies, and major languages."
+  "description": "A JavaScript library for retrieving detailed country information, including states, cities, country codes, currencies, and major languages.",
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "@typescript-eslint/parser": "^8.1.0",
+    "eslint": "^9.9.0",
+    "globals": "^15.9.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.1.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  }
 }

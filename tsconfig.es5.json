@@ -4,8 +4,11 @@
     "target": "ES5",
     "declaration": true,
     "outDir": "./dist/lib/es5",
+    "rootDir": "./src",
+    "sourceMap": true,
     "moduleResolution": "node",
     "lib": ["ES2020", "DOM"]
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
