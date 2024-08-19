@@ -6,7 +6,13 @@ interface CountryData {
   [country: string]: [number, string, string];
 }
 
-// Function to fetch all country names
+
+/**
+ * Fetches the country names
+ * 
+ * @returns A promise that resolves to an array of country names.
+ *          If the file is not found or there is an error parsing the data, an empty array is returned.
+ */
 async function fetchCountryNames(): Promise<string[]> {
   try {
     const filePath = path.join(__dirname, 'countries.json');
@@ -19,7 +25,11 @@ async function fetchCountryNames(): Promise<string[]> {
   }
 }
 
-// Function to get data for a specific country
+/**
+ * Retrieves country data based on the provided country name.
+ * @param {string} countryName - The name of the country to retrieve data for.
+ * @returns {Promise<[number, string, string] | null>} - A promise that resolves to an array containing the country data, or null if the country is not found.
+ */
 async function getCountryData(countryName: string): Promise<[number, string, string] | null> {
   try {
     const filePath = path.join(__dirname, 'countries.json');
