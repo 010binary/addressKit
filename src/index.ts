@@ -1,3 +1,16 @@
-import { fetchCountryNames, getCountryData } from "./countries/getCountry";
+const { fetchCountryNames, getCountryData } = require("./Country");
+const {
+  getAdministrativeDivisions,
+  getMajorLanguage,
+  getCapital,
+  getCountryCode,
+} = require("./State");
 
-export { fetchCountryNames, getCountryData };
+module.exports = {
+  fetchCountryNames,
+  getCountryData,
+  getAdministrativeDivisions,
+  getMajorLanguage,
+  getCapital,
+  getCountryCode,
+};

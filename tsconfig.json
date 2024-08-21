@@ -11,8 +11,14 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-    "lib": ["ES2020", "DOM"],
+    "lib": ["ES2020", "DOM"]
   },
-  "include": ["src/**/*.ts", "src/**/*.mts", "src/**/*.cts"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.mts",
+    "src/**/*.cts",
+    "src/**/*.d.ts",
+    "src/**/*.min.json"
+  ],
   "exclude": ["node_modules", "dist"]
 }

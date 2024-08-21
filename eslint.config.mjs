@@ -5,18 +5,18 @@ import * as tseslint from "typescript-eslint";
 export default [
   // This configuration will apply to all files
   {
-    files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts,.min.json}"],
     languageOptions: {
       globals: {
-        ...globals.node
-      }
+        ...globals.node,
+      },
     },
     plugins: {
-      "@typescript-eslint": tseslint.plugin
+      "@typescript-eslint": tseslint.plugin,
     },
     rules: {
       ...pluginJs.configs.recommended.rules,
-    }
+    },
   },
   // This configuration will apply only to TypeScript files
   {
@@ -24,12 +24,13 @@ export default [
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {
-        project: "./tsconfig.json"
-      }
+        project: "./tsconfig.json",
+      },
+      include: ["**/*.ts", "**/*.d.ts"],
     },
     rules: {
       ...tseslint.configs.recommended.rules,
       ...tseslint.configs.recommendedTypeChecked.rules,
-    }
-  }
+    },
+  },
 ];
